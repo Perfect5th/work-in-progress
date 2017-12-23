@@ -136,7 +136,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 
-STATIC_ROOT = os.path.join(BASE_DIR, '/static-root/')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static-root')
 
 LOGIN_REDIRECT_URL = reverse_lazy('wiki:get', kwargs={'path': ''})
 
