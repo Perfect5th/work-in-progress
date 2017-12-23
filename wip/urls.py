@@ -24,7 +24,6 @@ from wiki.urls import get_pattern as get_wiki_pattern
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^notifications/', get_nyt_pattern),
+    url(r'^notifications/', get_nyt_pattern()),
     url(r'', get_wiki_pattern()),
-    static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT),
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
