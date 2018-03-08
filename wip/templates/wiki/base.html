@@ -1,10 +1,14 @@
 {% extends "wiki/base_site.html" %}
 
-{% load static %}
+{% load static sekizai_tags %}
 
 {% block wiki_site_title %} - Work in Progress{% endblock %}
 
 {% block wiki_header_branding %}
+  {% addtoblock "css" %}
+    <link rel="stylesheet" href="{% static 'wip/css/customization.css' %}">
+  {% endaddtoblock %}
+
 <a class="navbar-brand" href="/">Work in Progress</a>
 {% endblock %}
 
@@ -16,12 +20,4 @@
 
 {% block wiki_footer_logo %}
 <a href="https://github.com/Perfect5th/work-in-progress" class="pull-right"><img src="{% static "wiki/img/github_icon.png" %}" /></a>
-<script src="{% static "wiki/js/jquery.min.js" %}"></script>
-<script type="text/javascript">
-  $(function () {
-    $('.codehilite-wrap, .codehilitetable, pre').css({
-      'max-height': 'none'
-    });
-  });
-</script>
 {% endblock %}

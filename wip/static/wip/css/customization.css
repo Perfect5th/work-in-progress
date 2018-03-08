@@ -1,0 +1,15 @@
+/* Custom styles for WIP django-wiki */
+
+.form-horizontal .wiki-control textarea {
+    height: 500px;
+}
+
+#id_content {
+    width: 166%;
+}
+
+.wiki-article .codehilitetable
+.wiki-article .codehilite-wrap,
+.wiki-article pre {
+    max-height: none;
+}

@@ -138,6 +138,8 @@ MEDIA_URL = '/media/'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static-root')
 
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'wip/static')]
+
 LOGIN_REDIRECT_URL = reverse_lazy('wiki:get', kwargs={'path': ''})
 
 SITE_ID = 1
