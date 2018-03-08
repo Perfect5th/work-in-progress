@@ -8,7 +8,7 @@
     width: 166%;
 }
 
-.wiki-article .codehilitetable
+.wiki-article .codehilitetable,
 .wiki-article .codehilite-wrap,
 .wiki-article pre {
     max-height: none;
