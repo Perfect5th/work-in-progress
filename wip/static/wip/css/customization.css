@@ -13,3 +13,15 @@
 .wiki-article pre {
     max-height: none;
 }
+
+details summary {
+    cursor: pointer;
+}
+
+details summary::before {
+    content: '▸ ';
+}
+
+details[open=""] summary::before {
+    content: '▾ ';
+}
