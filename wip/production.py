@@ -8,6 +8,7 @@ import django_heroku
 from .settings import *
 
 # Miscellaneous deploy settings
+DEBUG = False
 SECURE_HSTS_SECONDS = 31536000  # One year
 SECURE_HSTS_INCLUDE_SUBDOMAINS = True
 SECURE_HSTS_PRELOAD = True
@@ -25,5 +26,3 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', SECRET_KEY)
 
 # Activate Django-Heroku
 django_heroku.settings(locals())
-
-DEBUG = True
