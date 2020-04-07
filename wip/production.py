@@ -19,7 +19,7 @@ SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
 X_FRAME_OPTIONS = 'DENY'
 
-ALLOWED_HOSTS = ['wiki.mitchellburton.ca']
+ALLOWED_HOSTS = ['wiki.mitchellburton.ca', 'wiki2.mitchellburton.ca']
 
 # Use env secret key
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', SECRET_KEY)
