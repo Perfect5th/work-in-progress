@@ -42,6 +42,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'wip.middleware.Wiki2RedirectMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -142,3 +143,5 @@ WIKI_MARKDOWN_HTML_WHITELIST = [
     'dt', 'dd', 'h0', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'h7', 'details',
     'summary'
 ]
+
+SITE_URL = 'wiki.mitchellburton.ca'
