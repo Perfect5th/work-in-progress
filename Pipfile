@@ -9,7 +9,7 @@ python_version = "3.7"
 [dev-packages]
 
 [packages]
-pillow = "~=6.2"
+pillow = "~=9.0"
 wiki = "~=0.7"
 whitenoise = "~=4.1"
 gunicorn = "~=19.9"
